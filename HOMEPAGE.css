@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800;900&display=swap');
+*{
+
+    font-family: 'Geologica', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    --main-color : rgb(193,17,25);
+    --text-color: white;
+    --bg-color: black;
+}
+
+body{
+    background: black;
+    color: white;
+    width:  100%;
+    height: 100%;
+
+}
+
+section{
+    padding: 10px 5px;
+}
+
+
+header{
+    display: flex;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 50px 90px;
+    position: fixed;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    transform: 0.5s;
+
+}
+
+.logo-jetflix{
+    display: flex;
+    align-items: center;
+    color: rgb(193,17,25);
+    font-size: 47px;
+    font-weight: bold;
+    column-gap:  0.5rem;
+}
+
+.navbar{
+    display: flex;
+    column-gap: 5rem;
+}
+
+.navbar li{
+    position: relative;
+}
+
+.navbar a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+   
+    width: 0;
+    height: 2px;
+    margin-bottom: 15px;
+    background-color: rgb(193,17,25);
+    transition: 0.4s all linear;
+}
+
+.navbar a:hover::after, 
+.navbar .home-act::after{
+    width: 100%;
+}
+
+#bx-menu{
+    display: none;
+    cursor: pointer;
+    z-index: 10005;
+    font-size: 20px;
+
+}
+
+.search-container {
+    display: flex;
+    justify-content: top;
+    margin-top: 0px;
+  }
+
+
+.button {
+    padding: 10px 30px;
+    background-color: white;
+    color: rgb(132, 10, 16);
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  
+#search {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+  }
+  
+
+  
+  button:hover {
+    background-color: white;
+  }
+
+
+
+.button-getstarted{
+    color: white;
+    background-color: rgb(193,17,25);
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 15px 25px;
+    font-size: 20px;
+}
+
+.button-getstarted:hover{
+    background-color:rgb(132, 10, 16);
+}
+
+.POSTER{
+    width: 100%;
+    object-fit: cover;
+}
+.home-video{
+    width: 100%;
+    object-fit: cover;
+    margin-top: -10px;
+}
+.judul{
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.text-home{
+    z-index: 1000;
+    position: absolute;
+    color: white;
+    margin-top: 500px;
+   padding: 0 150px;
+}
+.decs{
+    width: 360px;
+    font-size: 18px;
+    font-weight: lighter;
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.text-home a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+.btn{
+    color: white;
+    background-color: rgb(193,17,25);
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 15px 25px;
+}
+
+ .btn:hover{
+    background-color:rgb(132, 10, 16);
+
+}
+
+.heading{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 50px;
+    border-bottom: 1px solid rgb(132, 10, 16);
+}
+
+.movie-container{
+    max-width: 2000px;
+    margin-left: 95px;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+
+
+
+.box .box-img{
+    width: 100%;
+    height: 270px;
+    transform: rotateY(0) ;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+.box .box-img img{
+  width: 226px;
+  height: 270px;
+  object-fit :cover;
+  border-radius: 6px;
+}
+
+
+.box{
+  position: relative;
+  width: 250px;
+}
+
+.play{
+  padding:10px 5px;
+  font-size: 50px;
+  color: rgb(132, 10, 16);
+}
+
+
+.box .content{
+  color: white;
+  background: rgba(0, 0, 0,0.8);
+  top: 0;
+  left: 0;
+  width: 226px;
+  height: 270px;
+  position: absolute;
+  padding: 90px 25px;
+  box-sizing: border-box;
+  text-align: center;
+  transform: rotateY(90deg);
+  cursor: pointer;
+
+}
+
+.box:hover .content{
+  transform: rotateY(0);
+}
+
+
+.box h3{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 5px;
+
+
+}
+.genre{
+    display: flex;
+    color:  rgb(132, 10, 16);
+    padding-top: 5px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.heading2{
+
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 40px;
+    border-bottom: 1px solid rgb(132, 10, 16);
+
+}
+
+header section .movie-container{
+    display:flex;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    align-items: center;
+    
+
+}
+
+

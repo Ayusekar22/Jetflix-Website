@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Geologica', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/Images/pxfuel.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 6px;
+}
+
+.container .judul {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.container .judul::before {
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 30px;
+  background: linear-gradient(135deg, rgb(132, 10, 16));
+  position: absolute;
+}
+
+.container form .detail-user {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+
+form .detail-user .input-box {
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2 - 20px);
+}
+
+.detail-user .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.detail-user .input-box input {
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+form .gender-section .gender-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form .gender-section .category {
+  width: 80%;
+  display: flex;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+.gender-section .category label {
+  display: flex;
+  align-items: center;
+}
+
+.gender-section .category .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+}
+
+input[type="radio"]:checked + label .dot {
+  border-color: #d9d9d9;
+  background: rgb(132, 10, 16);
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+.Button{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    color:#fff;
+    letter-spacing: 1px;
+    border-radius: 5px ;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    display: flex;
+    border: none;
+    background-color: rgb(132, 10, 16);
+    background: rgb(132, 10, 16);
+}
+
+
+.button1{
+  background-color: rgb(132, 10, 16);
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+form .Button input:hover{
+    background: rgb(193,17,25);;
+}
+
+@media(max-width :584px){
+    .container{
+        max-width: 100%;
+    }
+    form .detail-user .input-box {
+        margin: 20px 0 12px 0;
+        width: calc(100% / 2 - 20px);
+      }
+      form .detail-user .input-box {
+        margin: 20px 0 12px 0;
+        width: calc(100% / 2 - 20px);
+      }
+      .container form .detail-user{
+        max-height: 300px;
+        overflow-y: scroll;
+      }
+      .detail-user::-webkit-scrollbar{
+        width: 0;
+      }
+
+}

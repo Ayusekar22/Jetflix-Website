@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="LOGINPAGE1.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="judul">Registration</div>
+            <form action="#">
+                <div class="detail-user">
+                    
+                    <div class="input-box">
+                        <span class="details"> Username</span>
+                        <input type="text" name="username" id="username.txt" placeholder="Username" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" name="password" id="password.txt" placeholder="Enter your password" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" name ="email" id="email.txt" placeholder="Enter your email" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="details">Date of Birth</span>
+                        <input type="text" placeholder="DD/MM/YY" required>
+                    </div>
+    
+                 
+                </div>
+                <div class="gender-section">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                      <input type="radio" name="gender" id="dot1" checked>
+                      <label for="dot1">
+                        <span class="dot"></span>
+                        <span class="jenis-gender">Female</span>
+                      </label>
+                      <input type="radio" name="gender" id="dot2">
+                      <label for="dot2">
+                        <span class="dot"></span>
+                        <span class="jenis-gender">Male</span>
+                      </label>
+                      <input type="radio" name="gender" id="dot3">
+                      <label for="dot3">
+                        <span class="dot"></span>
+                        <span class="jenis-gender">Prefer not to say</span>
+                      </label>
+                    </div>
+                  </div>
+
+            <input type="checkbox" name="tnc" id="tnc"> Yes I Agree about the terms
+            and condition
+            <div class="Button">
+                <button class="button1"onclick="validateForm()">Register</button>
+            </div>
+           
+            </form>
+            
+        
+        </div>
+    
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
